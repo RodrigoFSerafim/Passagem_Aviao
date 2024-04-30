@@ -52,7 +52,7 @@ public class Voo_DAO {
             case 111:
                 String voo1 = JOptionPane.showInputDialog(null,"Escolha o assento:\n"+ assentovoo1);
                 int opvoo1 = Integer.parseInt(voo1);
-                if(opvoo1 == 1 && assentosvoo1[0].equals("1[X]") ){
+                if (opvoo1 == 1 && assentosvoo1[0].equals("1[X]") ){
                     JOptionPane.showMessageDialog(null,"Este assento está bloqueado, já foi alocado");
                 }if(opvoo1 == 2 && assentosvoo1[1].equals("2[X]") ){
                 JOptionPane.showMessageDialog(null,"Este assento está bloqueado, já foi alocado");
@@ -64,27 +64,27 @@ public class Voo_DAO {
                 JOptionPane.showMessageDialog(null,"Este assento está bloqueado, já foi alocado");
                 }if(opvoo1 == 6 && assentosvoo1[5].equals("6[X]") ){
                 JOptionPane.showMessageDialog(null,"Este assento está bloqueado, já foi alocado");
-                }if(opvoo1 == 1 && assentosvoo1[0].equals("1[ ]")){
+                }else if(opvoo1 == 1 && assentosvoo1[0].equals("1[ ]")){
                     assentosvoo1[0] = "1[X]";
                     assentovoo1 = assentosvoo1[0]+assentosvoo1[1]+"\n"+assentosvoo1[2]+assentosvoo1[3]+"\n"+assentosvoo1[4]+assentosvoo1[5];;
                     JOptionPane.showMessageDialog(null,"Reservado com sucesso");
-                }if (opvoo1 == 2 && assentosvoo1[1].equals("2[ ]")) {
+                }else if (opvoo1 == 2 && assentosvoo1[1].equals("2[ ]")) {
                     assentosvoo1[1] = "2[X]";
                     assentovoo1 = assentosvoo1[0]+assentosvoo1[1]+"\n"+assentosvoo1[2]+assentosvoo1[3]+"\n"+assentosvoo1[4]+assentosvoo1[5];;
                     JOptionPane.showMessageDialog(null,"Reservado com sucesso");
-                }if (opvoo1 == 3 && assentosvoo1[2].equals("3[ ]") ){
+                }else if (opvoo1 == 3 && assentosvoo1[2].equals("3[ ]") ){
                     assentosvoo1[2] = "3[X]";
                     assentovoo1 = assentosvoo1[0]+assentosvoo1[1]+"\n"+assentosvoo1[2]+assentosvoo1[3]+"\n"+assentosvoo1[4]+assentosvoo1[5];;
                     JOptionPane.showMessageDialog(null,"Reservado com sucesso");
-                }if (opvoo1 == 4 && assentosvoo1[3].equals("4[ ]") ){
+                }else if (opvoo1 == 4 && assentosvoo1[3].equals("4[ ]") ){
                     assentosvoo1[3] = "4[X]";
                     assentovoo1 = assentosvoo1[0]+assentosvoo1[1]+"\n"+assentosvoo1[2]+assentosvoo1[3]+"\n"+assentosvoo1[4]+assentosvoo1[5];;
                     JOptionPane.showMessageDialog(null,"Reservado com sucesso");
-                }if (opvoo1 == 5 && assentosvoo1[4].equals("5[ ]") ) {
+                }else if (opvoo1 == 5 && assentosvoo1[4].equals("5[ ]") ) {
                     assentosvoo1[4] = "5[X]";
                     assentovoo1 = assentosvoo1[0]+assentosvoo1[1]+"\n"+assentosvoo1[2]+assentosvoo1[3]+"\n"+assentosvoo1[4]+assentosvoo1[5];
                     JOptionPane.showMessageDialog(null,"Reservado com sucesso");
-                }if (opvoo1 == 6 && assentosvoo1[5].equals("6[ ]") ) {
+                }else if (opvoo1 == 6 && assentosvoo1[5].equals("6[ ]") ) {
                     assentosvoo1[5] = "6[X]";
                     assentovoo1 = assentosvoo1[0] + assentosvoo1[1] +"\n"+ assentosvoo1[2] + assentosvoo1[3] +"\n"+ assentosvoo1[4] + assentosvoo1[5];
                     JOptionPane.showMessageDialog(null, "Reservado com sucesso");
@@ -108,27 +108,27 @@ public class Voo_DAO {
                 JOptionPane.showMessageDialog(null,"Este assento está bloqueado, já foi alocado");
                 }if(opvoo2 == 6 && assentosvoo2[5].equals("6[X]") ){
                 JOptionPane.showMessageDialog(null,"Este assento está bloqueado, já foi alocado");
-                }if(opvoo2 == 1 && assentosvoo2[0].equals("1[ ]")){
+                }else if(opvoo2 == 1 && assentosvoo2[0].equals("1[ ]")){
                     assentosvoo2[0] = "1[X]";
                     assentovoo2 = assentosvoo2[0]+assentosvoo2[1]+"\n"+assentosvoo2[2]+assentosvoo2[3]+"\n"+assentosvoo2[4]+assentosvoo2[5];
                     JOptionPane.showMessageDialog(null,"Reservado com sucesso");
-                }if (opvoo2 == 2 && assentosvoo2[1].equals("2[ ]")) {
+                }else if (opvoo2 == 2 && assentosvoo2[1].equals("2[ ]")) {
                     assentosvoo2[1] = "2[X]";
                     assentovoo2 = assentosvoo2[0]+assentosvoo2[1]+"\n"+assentosvoo2[2]+assentosvoo2[3]+"\n"+assentosvoo2[4]+assentosvoo2[5];
                     JOptionPane.showMessageDialog(null,"Reservado com sucesso");
-                }if (opvoo2 == 3 && assentosvoo2[2].equals("3[ ]")){
+                }else if (opvoo2 == 3 && assentosvoo2[2].equals("3[ ]")){
                     assentosvoo2[2] = "3[X]";
                     assentovoo2 = assentosvoo2[0]+assentosvoo2[1]+"\n"+assentosvoo2[2]+assentosvoo2[3]+"\n"+assentosvoo2[4]+assentosvoo2[5];
                     JOptionPane.showMessageDialog(null,"Reservado com sucesso");
-                }if (opvoo2 == 4 && assentosvoo2[3].equals("4[ ]")){
+                }else if (opvoo2 == 4 && assentosvoo2[3].equals("4[ ]")){
                     assentosvoo2[3] = "4[X]";
                     assentovoo2 = assentosvoo2[0]+assentosvoo2[1]+"\n"+assentosvoo2[2]+assentosvoo2[3]+"\n"+assentosvoo2[4]+assentosvoo2[5];
                     JOptionPane.showMessageDialog(null,"Reservado com sucesso");
-                }if (opvoo2 == 5 && assentosvoo2[4].equals("5[ ]")) {
+                }else if (opvoo2 == 5 && assentosvoo2[4].equals("5[ ]")) {
                     assentosvoo2[4] = "5[X]";
                     assentovoo2 = assentosvoo2[0]+assentosvoo2[1]+"\n"+assentosvoo2[2]+assentosvoo2[3]+"\n"+assentosvoo2[4]+assentosvoo2[5];
                     JOptionPane.showMessageDialog(null,"Reservado com sucesso");
-                }if (opvoo2 == 6 && assentosvoo2[5].equals("6[ ]")) {
+                }else if (opvoo2 == 6 && assentosvoo2[5].equals("6[ ]")) {
                     assentosvoo2[5] = "6[X]";
                     assentovoo2 = assentosvoo2[0] + assentosvoo2[1] +"\n"+ assentosvoo2[2] + assentosvoo2[3] +"\n"+ assentosvoo2[4] + assentosvoo2[5];
                     JOptionPane.showMessageDialog(null, "Reservado com sucesso");
